@@ -32,3 +32,27 @@ public:
 	}
 
 };
+//≤„–Ú±È¿˙
+
+class Solution {
+public:
+	vector<int> PrintFromTopToBottom(TreeNode* root) {
+		vector<int> res;
+		if (root == NULL)
+			return res;
+		queue<TreeNode *> node_queue;
+		TreeNode * cur;
+		node_queue.push(root);
+		while (!node_queue.empty())
+		{
+			cur = node_queue.front();
+			res.push_back(cur->val);
+			node_queue.pop();
+			if (cur->left != NULL)
+				node_queue.push(cur->left);
+			if (cur->right != NULL)
+				node_queue.push(cur->right);
+		}
+		return res;
+	}
+};
