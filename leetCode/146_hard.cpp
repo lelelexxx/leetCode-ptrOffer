@@ -38,7 +38,7 @@ public:
         size_++;
         if(capacity_ < size_ )
         {
-            auto it_end = list_.end();
+            auto it_end = list_.back();
             hash_.erase(it_end->first);
             list_.pop_back();
             size_ --;
