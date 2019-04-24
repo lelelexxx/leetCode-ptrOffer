@@ -4,7 +4,7 @@
 #include<string>
 #include<algorithm>
 using namespace std;
-//77 编辑距离
+//72 编辑距离
 //给定两个单词，计算出将word1转换成word2所使用的最小操作数。
 //可以进行插入，删除，替换
 
